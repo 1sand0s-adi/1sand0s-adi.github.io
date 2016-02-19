@@ -6,14 +6,11 @@ window.onload = function () {
     document.getElementById('loading-mask').style.display = 'none';
 } */
 
-$(document.ready(function(){
+$(function(){
     /* ========================================================================= */
     /*  Menu item highlighting
     /* ========================================================================= */
 
-     $(document).load(function(){
-                     $("#bod").mCustomScrollbar({theme:"3d"});
-                  });
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 400) {
             jQuery("#navigation").css("background-color","#000000");
@@ -24,6 +21,9 @@ $(document.ready(function(){
         }
     });
 
+     $(window).load(function(){
+                     $(".no-js").mCustomScrollbar({theme:"3d"});
+                  });
 
     $('#nav').onePageNav({
         filter: ':not(.external)',
@@ -123,4 +123,4 @@ function progress(percent, $element) {
         if (++i<=max) myLoop(i,max);     
         }, 10)
     })(0,percent);  
-} );
+}   
