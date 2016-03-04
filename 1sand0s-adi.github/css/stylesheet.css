@@ -470,7 +470,7 @@ ul#navd li{
   list-style: none;
 }
 ul#navd li a{
-  color: #000000;
+  color: #ffffff;
   float: left;
   display: inline;
   width: 100%;
@@ -483,7 +483,7 @@ ul#navd li a{
   transition:0.2s;
 }
 ul#navd li a:hover{
-  background-color: #030303;
+  background-color: #090909;
   color: #ccc;
   text-decoration: none;
   padding-left: 30px;
