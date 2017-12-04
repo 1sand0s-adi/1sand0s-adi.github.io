@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <jnlp href="https://1sand0s-adi.github.io/launch.jnlp" spec="1.0+">
     <information>
@@ -15,6 +16,8 @@
         <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.8+"/>
         <jar href="https://1sand0s-adi.github.io/JEM.jar" main="true"/>
     </resources>
-    <application-desc main-class="JEM.JEM_main">
+    <application-desc main-class="JEM.JEM_main"
+        width="1800"
+        height="1000">
     </application-desc>
 </jnlp>
