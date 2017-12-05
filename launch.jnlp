@@ -8,7 +8,7 @@
         <description kind="short">JEM</description>
     </information>
     <resources>
-        <j2se version="1.8+"/>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.8+"/>
         <jar href="http://1sand0s-adi.github.io/JEM.jar" main="true"/>
     </resources>
     <application-desc main-class="JEM.JEM_main">
