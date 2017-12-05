@@ -7,8 +7,10 @@
         <description>JEM</description>
         <description kind="short">JEM</description>
     </information>
+    <update check="always"/>
     <security>
-    </security>
+<all-permissions/>
+</security>
     <resources>
         <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.8+"/>
         <jar href="https://1sand0s-adi.github.io/JEM.jar" main="true"/>
