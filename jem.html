@@ -154,8 +154,13 @@
             </div>
         </section>
 
-        <section id="Header">
-            <h1>JEM (Jave Based FEM Software for EM)</h1>
+        <section id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center wow fadeInDown">
+                            <h1>JEM (Jave Based FEM Software for EM)</h1>    
+                            
             <p>JEM is an FEM solver written completely in Java without any 3rd party libraries. Everything, from meshing to heatmaps was coded from scratch.
              FEM(Finite Element Method) is a numerical technique for solving PDE's and ODE's when analytical approaches are not possible. In our case, this mostly
              concerns the Laplace and Poisson equations which help us to construct a potential surface when the boundary conditions are known.</p>
@@ -167,7 +172,23 @@
                 the triangle element. Consequently, smaller the triangles lesser is the inaccuracies due to interpolation. The interpolation is linear in the case of FEM and 
                 usually just involves a plane described by the potentials at the 3 nodes.
             
-               </p></section>
+		    </p>
+                        </div>
+                    </div>
+                </div>
+		
+            <p>JEM is an FEM solver written completely in Java without any 3rd party libraries. Everything, from meshing to heatmaps was coded from scratch.
+             FEM(Finite Element Method) is a numerical technique for solving PDE's and ODE's when analytical approaches are not possible. In our case, this mostly
+             concerns the Laplace and Poisson equations which help us to construct a potential surface when the boundary conditions are known.</p>
+             <p>FEM was preceeded by two approaches, the Ritz method based on minimizing a functional and the Galerkin method based on minimizing the residual. Both
+              employ a subdomain basis functions to represent the unknown solution and converge on it iteratively during the minimization process. In FEM, the surface 
+              is first discretized by choosing the appropriate basis functions, in our case its the triangle for 2D and eventually tetrahedron for 3D primarily because
+               tesselations created using these structures lead to the most minimal discretization errors hence are generally more accurate. Once the surface has been discretized,
+               the potentials at the nodes of the triangle elements are used to fill in the FEM matrix (stiffness matrix) and these are hence used to compute the potential at any point within
+                the triangle element. Consequently, smaller the triangles lesser is the inaccuracies due to interpolation. The interpolation is linear in the case of FEM and 
+                usually just involves a plane described by the potentials at the 3 nodes.
+            
+		    </p></div></section>
 
         <!--
         End #home Slider
